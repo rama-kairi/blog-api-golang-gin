@@ -1,1 +1,8 @@
-[{"id":2,"title":"New blog 2 Updated","body":"Bew blog body 2 Updated"},{"id":3,"title":"New blog 3","body":"Bew blog body 3"}]
+[
+  {
+    "id": 2,
+    "title": "New blog 2 Updated",
+    "body": "Bew blog body 2 Updated"
+  },
+  { "id": 3, "title": "New blog 3", "body": "Bew blog body 3" }
+]

@@ -1,8 +1,6 @@
 package controllers
 
 import (
-	"encoding/json"
-	"log"
 	"net/http"
 	"strconv"
 
@@ -47,11 +45,7 @@ func (t BlogStore) GetBlog(c *gin.Context) {
 
 	for _, blog := range t.Blogs {
 		if blog.Id == id {
-			blogJson, err := json.Marshal(blog)
-			if err != nil {
-				log.Fatal(err)
-			}
-			utils.Response(c, http.StatusOK, blogJson, "Blog found")
+			utils.Response(c, http.StatusOK, blog, "Blog found")
 			return
 		}
 	}
